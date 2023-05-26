@@ -5,6 +5,7 @@ import Heading from "../../../common/heading/Heading"
 import { gallery } from "../../../../dummyData"
 import Tpost from "../Tpost/Tpost"
 import SocialMedia from "../social/SocialMedia"
+import { Link } from "react-router-dom"
 
 //const allCat = [...new Set(popular.map((curEle) => curEle.catgeory))]
 //console.log(allCat)
@@ -13,7 +14,8 @@ const Side = () => {
   const settings = {
     dots: false,
     infinite: true,
-    speed: 500,
+    speed: 1000,
+    autoplay:true,
     slidesToShow: 1,
     slidesToScroll: 1,
   }
@@ -48,7 +50,7 @@ const Side = () => {
         {catgeory.map((val,index) => {
           return (
             <div className='category category1' key={index}>
-              <span>{val}</span>
+              <Link className="val" to={`/other/${val}`}>{val}</Link>
             </div>
           )
         })}
@@ -59,9 +61,9 @@ const Side = () => {
         <Slider {...settings}>
           {gallery.map((val,index) => {
             return (
-              <div className='img' key={index}>
+              <Link className='img' key={index} to='./other/images'>
                 <img src={val.cover} alt='' />
-              </div>
+              </Link>
             )
           })}
         </Slider>

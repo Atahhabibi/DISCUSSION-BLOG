@@ -1,15 +1,15 @@
-import { useParams } from "react-router-dom";
+
 import { useState, useEffect } from "react";
 import { FetchData } from "../../API";
 import "./Box.css";
 import noImg from "../../images/no-image2.jpeg";
 
 const Box = () => {
-  const title='blog';
+  const title='physical Health';
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    FetchData("Boxed ")
+    FetchData(title)
       .then((resp) => {
         setData(resp?.articles);
       })
@@ -19,14 +19,12 @@ const Box = () => {
   }, []);
 
 
-
-
   return (
     <div className="section-center blog-container">
       {data?.map((a, key) => (
         <div key={key} className="single-blog">
           <div>
-            <img src={a.urlToImage || noImg} alt="image" className="blog-img" />
+            <img src={a.urlToImage || noImg} alt={a.title} className="blog-img" />
           </div>
           <div className="blog-info">
             <h4 className="title">{a.title.slice(0, 100)}</h4>

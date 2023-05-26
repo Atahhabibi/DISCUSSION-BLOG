@@ -55,6 +55,12 @@
   position: relative;
   margin-bottom: 20px;
   padding: 10px;
+  color: white
+}
+
+.val{
+color: white;
+cursor: pointer;
 }
 /*----------gallery----------*/
 .gallery .img {

@@ -18,7 +18,7 @@ const Footer = () => {
             <i className="fa fa-headphones"></i>
             <span> +91 60521488</span>
           </div>
-          <Link className="box" to={`/other/US footabll`}>
+          <div className="box" >
             <h3>SPORT</h3>
             <div className="item">
               <img src="../images/hero/hero1.jpg" alt="" />
@@ -31,7 +31,7 @@ const Footer = () => {
               <img src="../images/hero/hero2.jpg" alt="" />
               <p>Cespedes play the winning Baseball Game</p>
             </Link>
-          </Link>
+          </div>
           <Link className="box" to={`/other/US news`}>
             <h3>CRICKET</h3>
             <div className="item">

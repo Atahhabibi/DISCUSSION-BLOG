@@ -1,7 +1,8 @@
 .discover .content {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-gap: 30px;
+
+  display: flex;
+  flex-wrap:wrap;
+  column-gap:7rem;
 }
 
 .discover .box {
@@ -23,6 +24,11 @@
   text-transform: uppercase;
   margin: 0;
 }
+
+@media screen and (min-width:700px) {
+    
+}
+
 @media screen and (max-width: 768px) {
   .discover .content {
     grid-template-columns: repeat(3, 1fr);

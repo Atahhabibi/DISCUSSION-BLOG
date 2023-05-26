@@ -25,7 +25,7 @@ const Other = () => {
       {data?.map((a, key) => (
         <div key={key} className="single-blog">
           <div>
-            <img src={a.urlToImage || noImg} alt="image" className="blog-img" />
+            <img src={a.urlToImage || noImg} alt={a?.title} className="blog-img" />
           </div>
           <div className="blog-info">
             <h4 className="title">{a.title.slice(0,100)}</h4>

@@ -17,9 +17,29 @@
 .music h1 {
   font-size: 22px;
 }
+
+.text .title{
+  display:none;
+}
+.text .desc{
+  display:none;
+}
+
+@media screen and (min-width:768px) {
+  .text .title{
+    display:block;
+  }
+  .text .desc{
+    display:block;
+  }
+}
+
+
 @media screen and (max-width: 768px) {
   .music img,
   .music .images {
     height: 350px;
   }
+
+ 
 }
