@@ -1,85 +1,88 @@
-.single-blog{
-    min-height:34rem;
+.single-blog {
+    min-height: 32rem;
     text-align: center;
-}
-
-.blog-container{
+  }
+  
+  .blog-container {
     display: grid;
     grid-template-columns: 1fr;
-    margin-top:4rem;
-}
-
-.single-blog{
-    margin-bottom:2rem;
-    background:#e3e3e3;
+    margin-top: 4rem;
+  }
+  
+  .single-blog {
+    margin-bottom: 2rem;
+    background: #e3e3e3;
     position: relative;
-}
-
-.blog-img{
+  }
+  
+  .blog-img {
     width: 100%;
-    height:15rem;
+    height: 15rem;
     object-fit: cover;
-}
-
-.blog-info{
-    padding:1rem;
-    margin-top:0.8rem;
+  }
+  
+  .blog-info {
+    padding: 1rem;
+    margin-top: 0.8rem;
     overflow: hidden;
-    height:13rem;
-    font-size:1rem;
-}
-
-.title{
-    margin-bottom:1rem;
+    height: 10rem;
+    font-size: 1rem;
+  }
+  
+  .title {
+    margin-bottom: 1rem;
     font-weight: bold;
-}
-
-.read-btn{
-    background:rgb(20, 15, 6);
+  }
+  
+  .date {
+    color: brown;
+    font-size:1.2rem;
+  }
+  
+  .source-link {
+    color: rgb(34, 137, 148);
+  }
+  
+  .read-btn {
+    background: rgb(20, 15, 6);
     color: white;
-    padding:0.5rem;
-    margin:1rem 0;
-    display:inline-block;
+    padding: 0.5rem;
+    margin: 1rem 0;
+    display: inline-block;
     position: absolute;
     bottom: 0;
-   left: 50%;
-   transform: translate(-50%,-50%);
-    border-radius:5px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
     transition: all 0.5s ease;
-}
-
-.read-btn:hover{
-    color:white;
-    background:rgb(209, 93, 101);
+  }
+  
+  .read-btn:hover {
+    color: white;
+    background: rgb(209, 93, 101);
     font-weight: bold;
-}
-
-@media screen and (min-width:800px){
-    .blog-container{
-        grid-template-columns: 1fr 1fr;
-         column-gap:2rem;
-    }
-    
-    .single-blog{
-
-    }
-    .blog-info{
-        font-size:1rem;
+  }
+  
+  @media screen and (min-width: 900px) {
+    .blog-container {
+      grid-template-columns: 1fr 1fr;
+      column-gap: 2rem;
     }
   
-}
-
-@media screen and (min-width:1000px){
-    .blog-container{
-        grid-template-columns: 1fr 1fr 1fr;
-        
+    .blog-info {
+      font-size: 1rem;
     }
+  }
   
-}
-@media screen and (min-width:1200px){
-    .blog-container{
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        column-gap:2rem;
+  @media screen and (min-width: 1100px) {
+    .blog-container {
+      grid-template-columns: 1fr 1fr 1fr;
     }
+  }
+  @media screen and (min-width: 1200px) {
+    .blog-container {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      column-gap: 2rem;
+    }
+  }
   
-}

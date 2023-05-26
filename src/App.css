@@ -119,3 +119,26 @@ a {
   margin: 0 auto;
   width: 90vw;
 }
+
+.blog-container{
+  min-height:100vh;
+}
+
+@keyframes spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loading {
+  margin: 0 auto;
+  width: 6rem;
+  height: 6rem;
+  margin: 0 auto;
+  margin-top: 10rem;
+  border-radius: 50%;
+  border: 4px solid #ccc;
+  border-top-color: var(--clr-primary-5);
+  animation: spinner 0.6s linear infinite;
+  
+}

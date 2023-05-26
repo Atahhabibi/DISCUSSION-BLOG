@@ -1,5 +1,5 @@
 .single-blog {
-  min-height: 34rem;
+  min-height: 32rem;
   text-align: center;
 }
 
@@ -25,13 +25,22 @@
   padding: 1rem;
   margin-top: 0.8rem;
   overflow: hidden;
-  height: 13rem;
+  height: 10rem;
   font-size: 1rem;
 }
 
 .title {
   margin-bottom: 1rem;
   font-weight: bold;
+}
+
+.date {
+  color: brown;
+  font-size: 1.2rem;
+}
+
+.source-link {
+  color: rgb(34, 137, 148);
 }
 
 .read-btn {
@@ -60,8 +69,6 @@
     column-gap: 2rem;
   }
 
-  .single-blog {
-  }
   .blog-info {
     font-size: 1rem;
   }

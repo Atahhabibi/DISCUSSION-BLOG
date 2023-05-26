@@ -1,14 +1,27 @@
+import axios from "axios";
+
+const options = {
+  method: 'GET',
+  url: 'https://real-time-news-data.p.rapidapi.com/search',
+  params: {
+    query: '',
+    country: 'US',
+    lang: 'en'
+  },
+  headers: {
+    'X-RapidAPI-Key': process.env.REACT_APP_API_KEY,
+    'X-RapidAPI-Host': 'real-time-news-data.p.rapidapi.com'
+  }
+};
+
 export const FetchData = async (query) => {
   try {
-    let response = await fetch(
-      `https://newsapi.org/v2/everything?q=${query}&apiKey=2fa1039c7cbe45baa0f93b35233a6252`
-    );
-
-    let result = await response.json();
-    return result;
+    const response = await axios.request({
+     ...options,params:{query:query}
+    });
+    return response.data
 
   } catch (error) {
-    console.log(error);
+    return error;
   }
-
 };
